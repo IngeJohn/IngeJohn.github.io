@@ -50,7 +50,7 @@
     }
 
     .cuerpo2 {
-      background: linear-gradient( #148585 50%, white 50%);
+      background: linear-gradient(#148585 50%, white 50%);
     }
 
     .titulo {
@@ -60,6 +60,10 @@
       font-size: 150%;
       font-weight: bold;
     }
+    .presentacion {
+      font-size: 250%;
+      font-weight: bold;
+    }
 
     .dzf {
       font-size: 140%;
@@ -67,8 +71,7 @@
     }
 
     .info {
-      background-color: white; 
-      padding: 5% 0 5% 0;
+      background-color: white;
     }
 
     .corners-left {
@@ -77,6 +80,75 @@
 
     .corners-right {
       border-radius: 0 25px 25px 0;
+    }
+    .pad {
+      padding: 20px 0 0 0;
+    }
+    .vis-sm {
+      font-size: 300%;
+      font-weight: bold;
+      color: #ff0066;
+      visibility: hidden;
+    }
+
+    .front {
+        max-width: 100px;
+        padding: 50px 0 30px 0 ;
+      }
+
+    /* Extra small devices (phones, 600px and down) col-xs */
+    @media only screen and (max-width: 600px) {
+      .corners-left {
+        border-radius: 25px 25px 0 0;
+        padding: 3% 0 0 0;
+      }
+      .compu {
+        max-width: 400px;
+      }
+      .titulo {
+        font-size: 140%;
+      }
+      .dzf {
+        font-size: 110%;
+        line-height: 25px;
+      }
+      .titulo2 {
+        font-size: 120%;
+        font-weight: bold;
+      }
+      .vis-sm {
+        font-size: 300%;
+        font-weight: bold;
+        color: #dd0a5e;
+        visibility: visible;
+      }
+      
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) col-sm */
+    @media only screen and (min-width: 600px) {
+      .corners-left {
+        border-radius: 25px 25px 0 0;
+      }
+    }
+
+    /* Medium devices (landscape tablets, big phones, NOTE 4, 768px and up) col-md */
+    @media only screen and (min-width: 768px) {
+      .corners-left {
+        border-radius: 25px 0 25px 0;
+      }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up)  col-lg */
+    @media only screen and (min-width: 992px) {
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) col-xl */
+    @media only screen and (min-width: 1200px) {
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) col-xl */
+    @media only screen and (min-width: 1600px) {
     }
   </style>
 
@@ -87,7 +159,9 @@
       crossorigin="anonymous"
     ></script>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-border sticky-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark nav-border sticky-top"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="#"></a>
         <button
@@ -126,12 +200,28 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 center" >
-          <img src="img/pc.png" alt="C++" width="500" height="auto" style="padding: 3% 0 0 0;" />
+        <div class="col-12 center">
+          <p class="vis-sm" style="visibility: none">ABOUT</p>
+          <p class="presentacion">SOFTWARE DEVELOPER, HUSBAND & FATHER.</p>
+          <img
+                  src="img/IngeJohn.png"
+                  alt="Art by Jacqueline Janette Martínez."
+                  width="350"
+                  height="auto"
+                />
         </div>
-        <div class="col-2 cuerpo"></div>
-        <div class="col-8 center cuerpo">
-          <h3 class="titulo">Hi, I'm Jonathan Martinez. Nice to meet you.</h3>
+        <div class="col-12 center pad">
+          <img
+            src="img/pc.png"
+            alt="Computer"
+            class="compu"
+            width="500"
+            height="auto"
+          />
+        </div>
+        <div class="col-sm-1 col-md-2 cuerpo"></div>
+        <div class="col-sm-10 col-md-8 center cuerpo">
+          <h3 class="titulo">Hi, I'm Jonathan Martínez. Nice to meet you.</h3>
           <br />
           <p class="dzf">
             Since beginning my journey as a software developer, I've done remote
@@ -141,24 +231,44 @@
             work.
           </p>
         </div>
-        <div class="col-2 cuerpo"></div>
+        <div class="col-sm-1 col-md-2 cuerpo"></div>
         <div class="col-12 cuerpo2">
           <div class="container">
             <div class="row">
-              <div class="col-4 info center corners-left titulo2">
-                <p>Backend developer</p>
+              <div class="col-sm-12 col-md-4 info center corners-left titulo2">
+                <img
+                  src="img/back.png"
+                  alt="Backend-icon"
+                  class="front"
+                  width="100"
+                  height="auto"
+                />
+                <p>Back-end developer</p>
               </div>
-              <div class="col-4 info center titulo2">
-                <p>Frontend developer</p>
+              <div class="col-sm-12 col-md-4 info center titulo2">
+                <img
+                  src="img/front.png"
+                  alt="Frontend-icon"
+                  class="front"
+                  width="100"
+                  height="auto"
+                />
+                <p>Front-end developer</p>
               </div>
-              <div class="col-4 info center corners-right titulo2">
+              <div class="col-sm-12 col-md-4 info center corners-right titulo2">
+                <img
+                  src="img/mobile.png"
+                  alt="Mobile-icon"
+                  class="front"
+                  width="100"
+                  height="auto"
+                />
                 <p>Mobile application developer</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
   </body>
 </html>
