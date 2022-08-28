@@ -63,6 +63,7 @@
     .presentacion {
       font-size: 250%;
       font-weight: bold;
+      padding: 55px;
     }
 
     .dzf {
@@ -92,9 +93,9 @@
     }
 
     .front {
-        max-width: 100px;
-        padding: 50px 0 30px 0 ;
-      }
+      max-width: 100px;
+      padding: 50px 0 30px 0;
+    }
 
     /* Extra small devices (phones, 600px and down) col-xs */
     @media only screen and (max-width: 600px) {
@@ -122,7 +123,6 @@
         color: #dd0a5e;
         visibility: visible;
       }
-      
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) col-sm */
@@ -201,14 +201,26 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 center">
-          <p class="vis-sm" style="visibility: none">ABOUT</p> <hr class="vis-sm" style="visibility: none">
-          <p class="presentacion">SOFTWARE <br>DEVELOPER, <br>HUSBAND <br>& FATHER.</p>
-          <img
+          <p class="vis-sm" style="visibility: none">ABOUT</p>
+          <hr class="vis-sm" style="visibility: none" />
+
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col-md-4 col-sm-12">
+                <p class="presentacion">
+                  SOFTWARE <br />DEVELOPER, <br />HUSBAND <br />& FATHER.
+                </p>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <img
                   src="img/IngeJohn.png"
                   alt="Art by Jacqueline Janette Martínez."
                   width="350"
                   height="auto"
                 />
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-12 center pad">
           <img
@@ -272,3 +284,5 @@
     </div>
   </body>
 </html>
+
+
