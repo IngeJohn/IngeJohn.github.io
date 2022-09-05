@@ -10,9 +10,20 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+    />
   </head>
 
   <style>
+    /* @font-face {
+      font-family: 'Material DesignIcons';
+      src: url('http://findmatthew.com/fonts/mdi/css/../fonts/materialdesignicons-webfont.eot?v=1.5.54');
+      src: url('http://findmatthew.com/fonts/mdi/css/../fonts/materialdesignicons-webfont.eot?#iefix&v=1.5.54')
+          format('embedded-opentype'),
+        url('http://findmatthew.com/fonts/mdi/css/../fonts/materialdesignicons-webfont.woff2?v=1.5.54');
+    } */
     body {
     }
 
@@ -73,14 +84,16 @@
 
     .info {
       background-color: white;
+      font-size: 18px;
+      font-weight: 400;
     }
 
     .corners-left {
-      border-radius: 25px 0 0 25px;
+      border-radius: 15px 0 0 15px;
     }
 
     .corners-right {
-      border-radius: 0 25px 25px 0;
+      border-radius: 0 15px 15px 0;
     }
     .pad {
       padding: 20px 0 0 0;
@@ -97,11 +110,21 @@
       padding: 50px 0 30px 0;
     }
 
+    .test1 {
+      background-color: red;
+    }
+
+    .test2 {
+      background-color: blue;
+    }
+
     /* Extra small devices (phones, 600px and down) col-xs */
     @media only screen and (max-width: 600px) {
       .corners-left {
-        border-radius: 25px 25px 0 0;
-        padding: 3% 0 0 0;
+        border-radius: 15px 15px 0 0;
+      }
+      .corners-right {
+        border-radius: 0 0 15px 15px;
       }
       .compu {
         max-width: 400px;
@@ -128,14 +151,21 @@
     /* Small devices (portrait tablets and large phones, 600px and up) col-sm */
     @media only screen and (min-width: 600px) {
       .corners-left {
-        border-radius: 25px 25px 0 0;
+        border-radius: 15px 15px 0 0;
+      }
+      .corners-right {
+        border-radius: 0 0 15px 15px;
       }
     }
 
     /* Medium devices (landscape tablets, big phones, NOTE 4, 768px and up) col-md */
     @media only screen and (min-width: 768px) {
       .corners-left {
-        border-radius: 25px 0 25px 0;
+        border-radius: 15px 0 0 15px;
+      }
+
+      .corners-right {
+        border-radius: 0 15px 15px 0;
       }
     }
 
@@ -206,12 +236,12 @@
 
           <div class="container">
             <div class="row justify-content-md-center">
-              <div class="col-md-4 col-sm-12">
+              <div class="col-md-6 col-sm-12 col-lg-5 col-xl-4">
                 <p class="presentacion">
                   SOFTWARE <br />DEVELOPER, <br />HUSBAND <br />& FATHER.
                 </p>
               </div>
-              <div class="col-md-4 col-sm-12">
+              <div class="col-md-6 col-sm-12 col-lg-5 col-xl-4">
                 <img
                   src="img/IngeJohn.png"
                   alt="Art by Jacqueline Janette Martínez."
@@ -233,21 +263,21 @@
         </div>
         <div class="col-sm-1 col-md-2 cuerpo"></div>
         <div class="col-sm-10 col-md-8 center cuerpo">
-          <h3 class="titulo">Hi, I'm Jonathan Martínez. Nice to meet you.</h3>
+          <h3 class="titulo">Who's Jonathan Martínez?</h3>
           <br />
           <p class="dzf">
-            Since beginning my journey as a software developer, I've done remote
-            work for clients, consulted for startups, and collaborated with
-            talented people to create digital products for organizations and
-            institutions. I'm confident, creative, and dedicated to improve my
-            work.
+            I'm a software developer. Designing and creating systems, websites
+            and applications is my passion. Since the beginning of my journey as
+            a software developer, I've worked for clients such as organizations
+            and institutions and have collaborated with talented people. I'm
+            confident, creative and dedicated to improving my work.
           </p>
         </div>
         <div class="col-sm-1 col-md-2 cuerpo"></div>
         <div class="col-12 cuerpo2">
           <div class="container">
             <div class="row">
-              <div class="col-sm-12 col-md-4 info center corners-left titulo2">
+              <div class="col-sm-12 col-md-4 info center corners-left">
                 <img
                   src="img/back.png"
                   alt="Backend-icon"
@@ -255,9 +285,14 @@
                   width="100"
                   height="auto"
                 />
-                <p>Back-end developer</p>
+                <p class="titulo2">Back-end developer</p>
+                <p>
+                  I design, build and maintain databases, I have experience with
+                  DB connection and security libraries, data encryption, DB
+                  migrations, and servers in Web, desktop and mobile applications.
+                </p>
               </div>
-              <div class="col-sm-12 col-md-4 info center titulo2">
+              <div class="col-sm-12 col-md-4 info center">
                 <img
                   src="img/front.png"
                   alt="Frontend-icon"
@@ -265,9 +300,14 @@
                   width="100"
                   height="auto"
                 />
-                <p>Front-end developer</p>
+                <p class="titulo2">Front-end developer</p>
+                <p>
+                  I design, build and maintain databases, I have experience with
+                  DB connection and security libraries, data encryption, DB
+                  migrations, and servers in Web, desktop and mobile applications.
+                </p>
               </div>
-              <div class="col-sm-12 col-md-4 info center corners-right titulo2">
+              <div class="col-sm-12 col-md-4 info center corners-right">
                 <img
                   src="img/mobile.png"
                   alt="Mobile-icon"
@@ -275,7 +315,12 @@
                   width="100"
                   height="auto"
                 />
-                <p>Mobile application developer</p>
+                <p class="titulo2">Mobile app developer</p>
+                <p>
+                  I design, build and maintain databases, I have experience with
+                  DB connection and security libraries, data encryption, DB
+                  migrations, and servers in Web, desktop and mobile applications.
+                </p>
               </div>
             </div>
           </div>
@@ -284,5 +329,3 @@
     </div>
   </body>
 </html>
-
-
