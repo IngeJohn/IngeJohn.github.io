@@ -60,16 +60,37 @@
       width: 50px;
     }
 
+    #tama {
+      height: auto;
+
+      max-width: 50%;
+    }
+
     /* Extra small devices (phones, 600px and down) col-xs */
     @media only screen and (max-width: 600px) {
+      #tama {
+        height: auto;
+
+        max-width: 100%;
+      }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) col-sm */
     @media only screen and (min-width: 600px) {
+      #tama {
+        height: auto;
+
+        max-width: 100%;
+      }
     }
 
     /* Medium devices (landscape tablets, big phones, NOTE 4, 768px and up) col-md */
     @media only screen and (min-width: 768px) {
+      #tama {
+        height: auto;
+
+        max-width: 50%;
+      }
     }
 
     /* Large devices (laptops/desktops, 992px and up)  col-lg */
@@ -138,13 +159,17 @@
           <hr />
         </div>
         <div class="col-12 center">
-          <img src="img/maploc.png" alt="" width="600px">
+          <img src="img/maploc.png" alt="" id="tama" />
         </div>
         <div class="col-12 center">
-          
           <h3>Have a question or want to work together?</h3>
-          <p style="padding-top: 40px;"><img src="img/email.PNG" alt="" height="40px"> iscjohnmartin@gmail.com</p>
-          <p style="padding-top: 5px;"><img src="img/whatsapp.PNG" alt="" height="40px"> +52 496 112 9981</p>
+          <p style="padding-top: 40px">
+            <img src="img/email.PNG" alt="" height="40px" />
+            iscjohnmartin@gmail.com
+          </p>
+          <p style="padding-top: 5px">
+            <img src="img/whatsapp.PNG" alt="" height="40px" /> +52 496 112 9981
+          </p>
         </div>
       </div>
     </div>
@@ -157,7 +182,10 @@
         >
           <div class="row justify-content-center">
             <div class="col-1" style="width: 50px; padding: 60px 60px 0 0">
-              <a href="" style="text-decoration: none">
+              <a
+                href="https://www.linkedin.com/in/swe-jonathan-martinez/"
+                style="text-decoration: none"
+              >
                 <div class="boton1">in</div>
               </a>
             </div>
