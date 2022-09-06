@@ -43,6 +43,22 @@
     .center {
       text-align: center;
     }
+    .boton1 {
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      background-color: rgb(117, 117, 117);
+      width: 50px;
+      transition: background-color 1s ease-out 100ms;
+    }
+
+    .boton1:hover {
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      background-color: #ff0066;
+      width: 50px;
+    }
 
     /* Extra small devices (phones, 600px and down) col-xs */
     @media only screen and (max-width: 600px) {
@@ -69,7 +85,7 @@
     }
   </style>
 
-  <body>
+  <body class="scrollbar" id="style-1">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
@@ -118,12 +134,46 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="encabezado">CONTACT</h2>
+          <h2 class="encabezado">CONTACT INFORMATION</h2>
           <hr />
         </div>
         <div class="col-12 center">
-          <h3>Hi, I'm Jonathan Martinez. Nice to meet.</h3>
-          <p></p>
+          <img src="img/maploc.png" alt="" width="600px">
+        </div>
+        <div class="col-12 center">
+          
+          <h3>Have a question or want to work together?</h3>
+          <p style="padding-top: 40px;"><img src="img/email.PNG" alt="" height="40px"> iscjohnmartin@gmail.com</p>
+          <p style="padding-top: 5px;"><img src="img/whatsapp.PNG" alt="" height="40px"> +52 496 112 9981</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col-12 center"
+          style="height: 210px; background-color: #24222b; margin-top: 100px"
+        >
+          <div class="row justify-content-center">
+            <div class="col-1" style="width: 50px; padding: 60px 60px 0 0">
+              <a href="" style="text-decoration: none">
+                <div class="boton1">in</div>
+              </a>
+            </div>
+            <div class="col-1" style="width: 50px; padding: 60px 0 0 0">
+              <a
+                href="https://www.facebook.com/EngrJohnMartin/"
+                style="text-decoration: none"
+              >
+                <div class="boton1">f</div>
+              </a>
+            </div>
+          </div>
+
+          <p style="color: rgb(114, 111, 138); padding-top: 30px">
+            JONATHAN MARTINEZ <span style="color: #148585"> ©2022</span>
+          </p>
         </div>
       </div>
     </div>

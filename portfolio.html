@@ -84,23 +84,40 @@
 
     .boton1 {
       color: white;
-                    font-size: 32px;
-                    font-weight: bold;
-                    background-color: rgb(117, 117, 117);
-                    width: 50px;
-                    transition: background-color  1s ease-out 100ms;
+      font-size: 32px;
+      font-weight: bold;
+      background-color: rgb(117, 117, 117);
+      width: 50px;
+      transition: background-color 1s ease-out 100ms;
     }
 
     .boton1:hover {
       color: white;
-                    font-size: 32px;
-                    font-weight: bold;
-                    background-color:#ff0066;
-                    width: 50px;
+      font-size: 32px;
+      font-weight: bold;
+      background-color: #ff0066;
+      width: 50px;
+    }
+
+    .bot {
+      margin-left: 95%
     }
 
     /* Extra small devices (phones, 600px and down) col-xs */
     @media only screen and (max-width: 600px) {
+      .tamaño {
+      width: 340px;
+      height: 200px;
+    }
+    .bot {
+      margin-left: 90%
+    }
+    .posi {
+      background-color: lightgray;
+      width: 40px;
+      height: 40px;
+      margin-top: 160px;
+    }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) col-sm */
@@ -364,9 +381,8 @@
                     </p>
                     <button
                       type="button"
-                      class="btn btn-outline-dark"
+                      class="btn btn-outline-dark bot"
                       data-bs-dismiss="modal"
-                      style="margin-left: 95%"
                     >
                       X
                     </button>
@@ -387,14 +403,14 @@
               <div class="modal-content">
                 <div class="modal-body">
                   <div
-                    id="carouselExampleCaptions"
+                    id="carouselExampleCaptions2"
                     class="carousel slide"
                     data-bs-ride="carousel"
                   >
                     <div class="carousel-indicators">
                       <button
                         type="button"
-                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-target="#carouselExampleCaptions2"
                         data-bs-slide-to="0"
                         class="active"
                         aria-current="true"
@@ -402,45 +418,27 @@
                       ></button>
                       <button
                         type="button"
-                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-target="#carouselExampleCaptions2"
                         data-bs-slide-to="1"
                         aria-label="Slide 2"
                       ></button>
                       <button
                         type="button"
-                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-target="#carouselExampleCaptions2"
                         data-bs-slide-to="2"
                         aria-label="Slide 3"
                       ></button>
                       <button
                         type="button"
-                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-target="#carouselExampleCaptions2"
                         data-bs-slide-to="3"
                         aria-label="Slide 4"
-                      ></button>
-                      <button
-                        type="button"
-                        data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide-to="4"
-                        aria-label="Slide 5"
-                      ></button>
-                      <button
-                        type="button"
-                        data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide-to="5"
-                        aria-label="Slide 6"
-                      ></button>
-                      <button
-                        type="button"
-                        data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide-to="6"
-                        aria-label="Slide 7"
                       ></button>
                     </div>
                     <div class="carousel-inner tamaño">
                       <div class="carousel-item active">
                         <img
-                          src="img/project1b.PNG"
+                          src="img/project2.PNG"
                           class="d-block"
                           alt="..."
                           width="100%"
@@ -452,7 +450,7 @@
                       </div>
                       <div class="carousel-item">
                         <img
-                          src="img/project1.PNG"
+                          src="img/project2a.PNG"
                           class="d-block"
                           alt="..."
                           width="100%"
@@ -464,7 +462,7 @@
                       </div>
                       <div class="carousel-item">
                         <img
-                          src="img/project1a.PNG"
+                          src="img/project2b.PNG"
                           class="d-block"
                           alt="..."
                           width="100%"
@@ -476,43 +474,7 @@
                       </div>
                       <div class="carousel-item">
                         <img
-                          src="img/project1e.PNG"
-                          class="d-block"
-                          alt="..."
-                          width="100%"
-                        />
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5></h5>
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="img/project1c.PNG"
-                          class="d-block"
-                          alt="..."
-                          width="100%"
-                        />
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5></h5>
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="img/project1f.PNG"
-                          class="d-block"
-                          alt="..."
-                          width="100%"
-                        />
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5></h5>
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="img/project1g.PNG"
+                          src="img/project2c.PNG"
                           class="d-block"
                           alt="..."
                           width="100%"
@@ -526,7 +488,7 @@
                     <button
                       class="carousel-control-prev posi"
                       type="button"
-                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-target="#carouselExampleCaptions2"
                       data-bs-slide="prev"
                     >
                       <span
@@ -538,7 +500,7 @@
                     <button
                       class="carousel-control-next posi"
                       type="button"
-                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-target="#carouselExampleCaptions2"
                       data-bs-slide="next"
                     >
                       <span
@@ -551,22 +513,23 @@
 
                   <div class="information">
                     <p class="titulo2" style="padding: 20px 20px 0 20px">
-                      English Academy TecNM 2
+                      Loreto City Hospital Appointment Registration System
                     </p>
                     <p style="padding: 0 20px 0 20px">
-                      This system is designed to record the information of
-                      thousands of students and staff members, it also contains
-                      grading system tools, attendance control, subject
-                      assignment and scheduling. It has access classified by
-                      roles, password recovery, displays data graphs and
-                      calculate statistics from the database to generate various
-                      reports and listings in pdf format.
+                      This system was built with the php programming language
+                      and the Laravel framework, it is designed to register and
+                      update the information of patients who wish to obtain an
+                      appointment to be treated at the hospital. The system has
+                      a simple and very functional presentation, which allows
+                      the administrator to easily capture, through forms, the
+                      necessary data to generate the appointment, showing those
+                      who have unsubscribed in a red box. It also allows you to
+                      print the database records in PDF format.
                     </p>
                     <button
                       type="button"
-                      class="btn btn-outline-dark"
+                      class="btn btn-outline-dark bot"
                       data-bs-dismiss="modal"
-                      style="margin-left: 95%"
                     >
                       X
                     </button>
@@ -710,21 +673,17 @@
           style="height: 210px; background-color: #24222b; margin-top: 100px"
         >
           <div class="row justify-content-center">
-            <div class="col-1" style="width: 50px; padding: 60px 60px 0 0;">
-              <a href="" style="text-decoration: none;">
-                <div class="boton1"
-
-                >
-                  in
-                </div>
+            <div class="col-1" style="width: 50px; padding: 60px 60px 0 0">
+              <a href="" style="text-decoration: none">
+                <div class="boton1">in</div>
               </a>
             </div>
-            <div class="col-1" style="width: 50px; padding: 60px 0 0 0;">
-              <a href="https://www.facebook.com/EngrJohnMartin/" style="text-decoration: none;">
-                <div class="boton1"
-                >
-                  f
-                </div>
+            <div class="col-1" style="width: 50px; padding: 60px 0 0 0">
+              <a
+                href="https://www.facebook.com/EngrJohnMartin/"
+                style="text-decoration: none"
+              >
+                <div class="boton1">f</div>
               </a>
             </div>
           </div>
