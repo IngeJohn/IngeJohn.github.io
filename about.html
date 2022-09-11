@@ -145,6 +145,14 @@
       margin: 0; /* Remove margins */
     }
 
+    .tamaño {
+      width: auto;
+      height: 530px;
+    }
+    .infoEdu {
+      text-align: center;
+    }
+
     /* Extra small devices (phones, 600px and down) col-xs */
     @media only screen and (max-width: 600px) {
       .corners-left {
@@ -173,6 +181,14 @@
         color: #dd0a5e;
         visibility: visible;
       }
+      .tamaño {
+        width: auto;
+        height: 260px;
+      }
+      .infoEdu {
+        font-size: 16px;
+        padding: 5px 50px 0 50px;
+      }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) col-sm */
@@ -185,6 +201,14 @@
       }
       .corners-right2 {
         border-radius: 0 0 0 0;
+      }
+      .tamaño {
+        width: auto;
+        height: 300px;
+      }
+      .infoEdu {
+        font-size: 20px;
+        padding: 14px 50px 0 50px;
       }
     }
 
@@ -200,6 +224,14 @@
       .corners-right2 {
         border-radius: 0 0 0 0;
       }
+      .tamaño {
+        width: auto;
+        height: 380px;
+      }
+      .infoEdu {
+        font-size: 24px;
+        padding: 20px 60px 0 60px;
+      }
     }
 
     /* Large devices (laptops/desktops, 992px and up)  col-lg */
@@ -214,10 +246,32 @@
       .corners-right2 {
         border-radius: 0 15px 0 0;
       }
+      .info {
+        padding: 0 20px 0 20px;
+      }
+      .tamaño {
+        width: auto;
+        height: 460px;
+      }
+      .infoEdu {
+        font-size: 26px;
+        padding: 20px 80px 0 80px;
+      }
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) col-xl */
     @media only screen and (min-width: 1200px) {
+      .info {
+        padding: 0 40px 0 40px;
+      }
+      .tamaño {
+        width: auto;
+        height: 460px;
+      }
+      .infoEdu {
+        font-size: 26px;
+        padding: 20px 200px 0 200px;
+      }
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) col-xl */
@@ -344,7 +398,9 @@
                 </ul>
                 <hr />
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-4 info center corners-right">
+              <div
+                class="col-sm-12 col-md-6 col-lg-4 info center corners-right"
+              >
                 <img
                   src="img/front.png"
                   alt="Frontend-icon"
@@ -369,7 +425,9 @@
                 </ul>
                 <hr />
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-4 info center corners-right2">
+              <div
+                class="col-sm-12 col-md-6 col-lg-4 info center corners-right2"
+              >
                 <img
                   src="img/mobile.png"
                   alt="Mobile-icon"
@@ -442,7 +500,7 @@
                   <li>Python</li>
                   <li>Arduino</li>
                   <li>Java</li>
-                  <li>Electronic board  & circuit design</li>
+                  <li>Electronic board & circuit design</li>
                   <li style="color: white">.</li>
                   <li style="color: white">.</li>
                   <li style="color: white">.</li>
@@ -461,9 +519,12 @@
                 <p class="titulo2">Network Engineer</p>
                 <p style="height: 150px">
                   I have experience configuring and maintaining computer
-                  networks, as well as office computer software and hardware maintenance.
+                  networks, as well as office computer software and hardware
+                  maintenance.
                 </p>
-                <p class="titulo3">Skills, technologies, devices and several tools</p>
+                <p class="titulo3">
+                  Skills, technologies, devices and several tools
+                </p>
                 <ul class="no-bullets">
                   <li>Routers & modems</li>
                   <li>P2P antennas</li>
@@ -487,8 +548,8 @@
                 />
                 <p class="titulo2">Other skills</p>
                 <p style="height: 120px">
-                  Good level of English, basic French, 
-                  experience with MS office software and editing photos, videos and audio.
+                  Good level of English, basic French, experience with MS office
+                  software and editing photos, videos and audio.
                 </p>
                 <p class="titulo3">Software</p>
                 <ul class="no-bullets">
@@ -509,10 +570,136 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12 center" style="padding-top: 100px;">
-          <p style="font-weight: bold; font-size:30px;">EDUCATION</p>
+    <div class="container-fluid">
+      <div
+        class="row justify-content-center"
+        style="background-color: rgb(243, 240, 230)"
+      >
+        <div
+          class="col-12 center"
+          style="padding-top: 100px; background-color: rgb(243, 240, 230)"
+        >
+          <p style="font-weight: bold; font-size: 36px; padding: 0 0 40px 0">
+            EDUCATION
+          </p>
+        </div>
+        <div class="col-sm-10 col-md-9 col-lg-9 col-xl-7">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner tamaño">
+              <div class="carousel-item active">
+                <img
+                  src="img/discurso.jpg"
+                  class="d-block"
+                  alt="..."
+                  width="100%"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/premios.jpg"
+                  class="d-block"
+                  alt="..."
+                  width="100%"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/compas.jpg"
+                  class="d-block"
+                  alt="..."
+                  width="100%"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/graduado.png"
+                  class="d-block"
+                  alt="..."
+                  width="100%"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-12">
+          <p class="infoEdu">
+            I graduated with honors and received the best GPA in Computer
+            Systems Engineering 2021 award, and I also received the best GPA of
+            Mexico Institut of Technology campus Loreto generation 2021
+            award.
+          </p>
         </div>
       </div>
     </div>
